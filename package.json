@@ -1,56 +1,34 @@
 {
-  "name": "vue-particleground",
-  "version": "1.1.2",
+  "name": "vue-partivleground",
+  "description": "vue-partivleground",
+  "version": "0.0.1",
+  "author": "Vadym <margeslt@gmail.com>",
+  "private": false,
+  "main": "src/index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "lib:build": "vue-cli-service build --target lib --name VuePartivleground ./src/components/VuePartivleground/index.js",
-    "lib:publish": "npm run lib:build && npm publish"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "main": "dist/VuePartivleground.common.js",
-  "keywords": [
-    "vue-particleground",
-    "particleground"
-  ],
   "dependencies": {
-    "core-js": "^3.8.1",
-    "vue": "^3.0.0",
-    "vue-particleground": "^1.1.2"
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.18.2",
+    "vue": "^2.3.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0",
-    "gh-pages": "^3.1.0",
-    "node-sass": "^5.0.0",
-    "sass-loader": "^10.1.0"
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.28.0",
+    "del": "^3.0.0",
+    "shelljs": "^0.7.7",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0",
+    "standard-version": "^4.0.0",
+    "vue-router": "^2.8.1"
   },
-  "wst": "/dist/",
-  "homepage": "https://ciming.github.io/vue-partivleground/",
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "license": "MIT"
 }
