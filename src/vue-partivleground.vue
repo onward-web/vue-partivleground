@@ -3,12 +3,12 @@
     <div class="vue-pg__content">
       <slot/>
     </div>
-    
+
   </div>
 </template>
 
 <script>
-import Partivleground from './Partivleground'
+import Partivleground from './Partivleground.js'
 
 export default {
   props: {
@@ -37,7 +37,7 @@ export default {
       }
       new Partivleground(this.$el, options)
     })
-    
+
   }
 }
 </script>

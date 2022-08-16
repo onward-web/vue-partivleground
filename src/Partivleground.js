@@ -1,5 +1,5 @@
 
-import Particle from './Particle'
+import Particle from './Particle.js'
 export default class Partivleground{
   constructor($wrap, options ={}) {
     this.isDesktop = !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|mobi|tablet|opera mini|nexus 7)/i)

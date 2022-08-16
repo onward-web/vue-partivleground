@@ -1,4 +1,4 @@
-import VuePartivlegroundComponent from './VuePartivleground.vue';
+import VuePartivlegroundComponent from './vue-partivleground.vue';
 
 const VuePartivleground = {
     install (Vue, options) {
